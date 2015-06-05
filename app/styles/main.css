@@ -1,0 +1,77 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Sans-Serif;
+}
+
+.win {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #ccccff;
+  padding: .3em .5em .2em .5em;
+}
+
+.main {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  width: 10em;
+  min-width: 5em;
+  max-width: 100em;
+}
+
+.ui-resizable-handle {
+  flex-basis: 6px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: gray;
+}
+
+.ui-resizable-s {
+  cursor:s-resize;
+}
+
+.ui-resizable-e {
+  cursor:e-resize;
+}
+
+.tree, .list {
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+.resizablecontent {
+  flex: 1;
+  overflow: auto;
+}
+
+.resizablecontent, .text, .visualizer {
+  padding: .2em;
+}
+
+
+.fillrest {
+  flex: 1;
+}
+
+.selectable .ui-selecting { background: #FECA40; }
+.selectable .ui-selected { background: #beebff;}
+.selectable { list-style-type: none; margin: 0; padding: 0;}
