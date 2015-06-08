@@ -20,6 +20,8 @@ body {
 .header {
   background-color: #ccccff;
   padding: .3em .5em .2em .5em;
+  display: flex;
+  flex-direction: row;
 }
 
 .main {
@@ -32,9 +34,13 @@ body {
 .sidebar {
   display: flex;
   flex-direction: row;
-  width: 10em;
+  width: 20em;
   min-width: 5em;
-  max-width: 100em;
+  max-width: 1000em;
+}
+
+.wide {
+  width: 1000em;
 }
 
 .ui-resizable-handle {
@@ -60,6 +66,7 @@ body {
 
 .resizablecontent {
   flex: 1;
+  flex-grow: 100;
   overflow: auto;
 }
 
@@ -72,6 +79,24 @@ body {
   flex: 1;
 }
 
+.selectable { border-collapse: collapse; }
 .selectable .ui-selecting { background: #FECA40; }
 .selectable .ui-selected { background: #beebff;}
 .selectable { list-style-type: none; margin: 0; padding: 0;}
+
+.list td+td+td {
+  text-align: right;
+}
+
+.list input {
+  border-bottom: 1px solid black;
+}
+
+.list .rowcount {
+  border-top: 1px solid black;
+}
+
+.text p {
+  padding: 0;
+  margin: 0;
+}
