@@ -6,8 +6,8 @@
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   font-family: Helvetica, Sans-Serif;
 }
 
@@ -58,7 +58,7 @@ body {
   cursor:e-resize;
 }
 
-.tree, .list {
+#flatlist {
   height: 25em;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ body {
   overflow: auto;
 }
 
-.resizablecontent, .text, .visualizer {
+.resizablecontent, #flatviewer, #visualizer {
   padding: .2em;
 }
 
@@ -84,27 +84,34 @@ body {
 .selectable .ui-selected { background: #beebff;}
 .selectable { list-style-type: none; margin: 0; padding: 0;}
 
-.list td+td+td {
+#flatlist td+td+td {
   text-align: right;
 }
 
-.list input {
+#flatlist input {
   border-bottom: 1px solid black;
 }
 
-.list .rowcount {
+#flatlist .rowcount {
   border-top: 1px solid black;
 }
 
-.text p {
-  padding: 0;
+#flatviewer p {
   margin: 0;
+  padding: 0;
 }
 
-.visualizer {
+#visualizer {
   background-color: #ddd;
 }
+
 svg {
   background-color: #eee;
   flex: 1;
 }
+
+/* div {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid red;
+} */

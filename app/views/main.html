@@ -6,8 +6,9 @@
   <div class="main">
     <div class="sidebar eresizable">
       <div class="resizehandlediv">
-        <div id="flatlist" class="list sresizable">
-          <input type="text" ng-model="filterexpr.location.address.streetAddress" ng-model-options="{debounce: 400}">
+        <div id="flatlist" class="sresizable">
+          <input type="text" ng-model="filterexpr.location.address.streetAddress"
+              ng-model-options="{debounce: 400}">
           <div class="resizablecontent">
             <table class="selectable">
               <tr ng-repeat="flat in hits = (flats.sold | filter:filterexpr)">
@@ -19,7 +20,7 @@
           </div>
           <div class="rowcount">{{hits.length}} rows</div>
         </div>
-        <div id="flatviewer" class="text fillrest">
+        <div id="flatviewer" class="fillrest">
           <p ng-repeat="row in flatDescription">
             {{row}}
           </p>
