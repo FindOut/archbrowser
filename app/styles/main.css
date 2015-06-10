@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  background-color: #ccccff;
+  background-color: #ccddff;
   padding: .3em .5em .2em .5em;
   display: flex;
   flex-direction: row;
@@ -59,7 +59,7 @@ body {
 }
 
 .tree, .list {
-  height: 10em;
+  height: 25em;
   display: flex;
   flex-direction: column;
 }
@@ -99,4 +99,12 @@ body {
 .text p {
   padding: 0;
   margin: 0;
+}
+
+.visualizer {
+  background-color: #ddd;
+}
+svg {
+  background-color: #eee;
+  flex: 1;
 }
